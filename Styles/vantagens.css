@@ -1,0 +1,97 @@
+.vantagem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.subtitulo {
+  font-size: 4rem;
+  padding: 40px;
+  /* word-break: break-all;vantagem-lista */
+  color: #ccc;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: right;
+  background-image: url("../img/onda.svg");
+}
+
+.vantagem-itens {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr auto;
+  gap: 10px 20px;
+  border-left: 3px solid transparent;
+  padding: 20px;
+}
+.vantagem p {
+  grid-column: 2;
+  line-height: 1.3;
+}
+.vantagem h3 {
+  justify-self: strat;
+}
+.vantagem-lista {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.vantagem-itens:hover {
+  border-left: 3px solid var(--cor-botao);
+}
+.vantagem-itens:nth-child(odd) {
+  background-color: var(--cor-de-fundo);
+}
+@media (max-width: 1200px) {
+  .vantagem {
+    grid-template-columns: 1fr;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+  .vantagem-itens h3 {
+    grid-column: 1;
+    text-align: center;
+  }
+  .vantagem-itens p {
+    grid-column: 1/3;
+    text-align: center;
+  }
+  .vantagem-itens img {
+    justify-self: center;
+  }
+  .vantagem-lista {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 600px) {
+  .subtitulo {
+    font-size: 2rem;
+  }
+  .vantagem-itens h3 {
+    font-size: 1rem;
+  }
+  .vantagem-itens p {
+    font-size: 0.824rem;
+  }
+  .vantagem-lista {
+    padding: 35px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .subtitulo {
+    color: var(--cor-cinza-text);
+  }
+  .vantagem {
+    background-color: var(--cor-cinza-dark);
+  }
+  .vantagem-lista {
+    background-color: var(--cor-brackgroud);
+  }
+  .vantagem-lista h3{
+    color: var(--cor-de-fundo);
+  }
+  .vantagem-lista p{
+color: var(--cor-cinza-text);
+  }
+  .vantagem-itens:nth-child(odd) {
+    background-color: #000;
+  }
+}

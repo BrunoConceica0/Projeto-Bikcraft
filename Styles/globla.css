@@ -1,0 +1,42 @@
+:root {
+  /* cores */
+  --cor-principal-text: #141414;
+  --cor-botao: #d93c1c;
+  --cor-de-fundo: #f7f7f7;
+  --cor-cinza-text: #cccc;
+  --cor-branca: #ffff;
+  /* fontes */
+  --fonte-titulo: 1.652rem;
+  --fonte-texto-link: 1.252rem;
+  --font-texto: 1.252rem;
+  --fonte-texte-menor: 0.825rem;
+  /* Cores escuras */
+  ---cor-text: #ffff;
+  --cor-botao: #d93c1c;
+  --cor-brackgroud: #333333;
+  --cor-cinza-dark: #141414;
+  --cor-de-fundo: #f7f7f7;
+  --cor-preta: #000;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  color: var(--cor-principal-text);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-de-fundo);
+}
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+.main {
+  max-width: 1200px;
+}

@@ -1,0 +1,34 @@
+.rodape {
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 60px;
+  text-align: center;
+  margin-top: 60px;
+}
+@media (max-width: 1200px) {
+  .rodape {
+    margin-top: 20px;
+  }
+}
+.rodape span {
+  font-size: 1.251rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+@media (max-width: 600px) {
+  .rodape span {
+    font-size: 1rem;
+  }
+  .rodape {
+    margin-top: 0px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .rodape{
+    background-color: var(--cor-cinza-dark);
+  }
+  .rodape span{
+    color: var(--cor-de-fundo);
+  }
+}
