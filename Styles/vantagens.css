@@ -1,3 +1,7 @@
+:root {
+  --onda-clara: url("../img/onda.svg");
+  --onde-escura: url("../img/onda1.svg");
+}
 .vantagem {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -78,6 +82,7 @@
 @media (prefers-color-scheme: dark) {
   .subtitulo {
     color: var(--cor-cinza-text);
+    background-image: url("../img/onda-escura.svg");
   }
   .vantagem {
     background-color: var(--cor-cinza-dark);
@@ -85,11 +90,11 @@
   .vantagem-lista {
     background-color: var(--cor-brackgroud);
   }
-  .vantagem-lista h3{
+  .vantagem-lista h3 {
     color: var(--cor-de-fundo);
   }
-  .vantagem-lista p{
-color: var(--cor-cinza-text);
+  .vantagem-lista p {
+    color: var(--cor-cinza-text);
   }
   .vantagem-itens:nth-child(odd) {
     background-color: #000;

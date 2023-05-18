@@ -5,6 +5,7 @@
   --cor-de-fundo: #f7f7f7;
   --cor-cinza-text: #cccc;
   --cor-branca: #ffff;
+  --onda-clara:url("../img/onda-clara.svg");
   /* fontes */
   --fonte-titulo: 1.652rem;
   --fonte-texto-link: 1.252rem;
@@ -17,6 +18,7 @@
   --cor-cinza-dark: #141414;
   --cor-de-fundo: #f7f7f7;
   --cor-preta: #000;
+  --onda-escura:url("/img/onda-escura.svg");
 }
 * {
   margin: 0px;
